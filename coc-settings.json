@@ -1,0 +1,7 @@
+{
+  "suggest.autoTrigger": "none",
+  "diagnostic.errorSign": "xx",
+  "diagnostic.warningSign": "!!",
+  "diagnostic.infoSign": ">>",
+  "coc.preferences.formatOnSaveFiletypes": ["elixir", "rust"]
+}
