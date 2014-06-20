@@ -1,0 +1,8 @@
+.DS_*
+vim/spell/*.add
+vim/spell/*.spl
+vim/.netrwhist
+vim/bundle/*
+vim/eclim/*
+vim/plugin/eclim.vim
+**/*.swp
