@@ -6,3 +6,5 @@ vim/bundle/*
 vim/eclim/*
 vim/plugin/eclim.vim
 **/*.swp
+vim_lua/plugin/packer_compiled.lua
+**/*.luarc.json

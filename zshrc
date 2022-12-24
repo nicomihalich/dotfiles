@@ -25,11 +25,13 @@ zstyle ':completion:*:default' list-colors 'GxFxCxDxBxegedabagaced'
 zstyle ':vcs_info:*' check-for-changes true
 zstyle ':vcs_info:*' unstagedstr '%F{red}*%f'
 zstyle ':vcs_info:*' stagedstr '%F{yellow}+%f'
-zstyle ':vcs_info:git:*' formats       '%F{yellow}[%f%F{blue}%r%f %F{green}%b%f%u%c%F{yellow}]%f'
+# zstyle ':vcs_info:git:*' formats       '%F{yellow}[%f%F{blue}%r%f %F{green}%b%f%u%c%F{yellow}]%f'
+zstyle ':vcs_info:git:*' formats       '%F{yellow}[%f%F{green}%b%f%u%c%F{yellow}]%f'
 zstyle ':vcs_info:git:*' actionformats '%F{green}%b%f|%F{red}%a%f%u%c'
 
-PROMPT='%F{magenta}%n@%m%f %F{cyan}%~%f%F{yellow} %# %f'
-RPROMPT='${vcs_info_msg_0_}'
+# PROMPT='%F{magenta}%n@%m%f %F{cyan}%~%f%F{yellow} %# %f'
+# RPROMPT='${vcs_info_msg_0_}'
+PROMPT='%F{magenta}%m%f %F{cyan}%~%f ${vcs_info_msg_0_}%F{yellow} %# %f'
 
 # Source machine specific aliases
 source ~/.other_alias.sh
@@ -71,7 +73,7 @@ export NVM_DIR="$HOME/.nvm"
 
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 
-. /opt/homebrew/opt/asdf/asdf.sh ~/.other_alias
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
 
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
@@ -81,3 +83,4 @@ if command -v pyenv 1>/dev/null 2>&1; then
 fi
 
 export ERL_AFLAGS="-kernel shell_history enabled"
+export KERL_BUILD_DOCS=yes
